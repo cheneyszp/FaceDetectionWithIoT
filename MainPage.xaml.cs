@@ -65,9 +65,9 @@ namespace CameraFaceDetection
 
         // Rotation metadata to apply to the preview stream and recorded videos (MF_MT_VIDEO_ROTATION)
         // Reference: http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh868174.aspx
-        private static readonly Guid RotationKey = new Guid("THE GUID");
+        private static readonly Guid RotationKey = new Guid("C380465D-2271-428C-9B83-ECEA3B4A85C1");
 
-        Uri uploadAddress = new Uri("http://YOU_WEBSITE_API_TO_UPLOAD?DeviceId=YOU_DEVICE_ID");
+        string uploadAddress = "http://iotfacedetection.azurewebsites.net/api/FaceDetection/FaceUpload?DeviceId=3d16334ca04a412388bae34d0dbf300f";
         // The url of your server to upload the face picture
 
         // Prevent the screen from sleeping while the camera is running
